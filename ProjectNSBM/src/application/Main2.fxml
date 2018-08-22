@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <JFXTabPane layoutX="284.0" layoutY="158.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                  <Tab fx:id="tabUnd" closable="false" text="Undergraduate">
+                     <content>
+                        <AnchorPane prefHeight="450.0" prefWidth="400.0">
+                           <children>
+                              <ButtonBar layoutX="8.0" layoutY="308.0" prefHeight="40.0" prefWidth="583.0" AnchorPane.bottomAnchor="14.399999999999977" />
+                              <JFXTextField fx:id="undID" layoutX="232.0" layoutY="181.0" promptText="ID" />
+                              <JFXButton fx:id="btnUndEdit" layoutX="274.0" layoutY="263.0" onAction="#editUnd" text="Edit" />
+                              <JFXButton fx:id="btnUndNew" layoutX="367.0" layoutY="263.0" onAction="#newUnd" text="New" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tabPostgraduate" closable="false" text="Postgraduate">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ButtonBar layoutX="8.0" layoutY="314.0" prefHeight="40.0" prefWidth="583.0">
+                                 <buttons>
+                                    <JFXButton fx:id="btnPostNew" onAction="#newPost" text="New" />
+                                    <JFXButton fx:id="btnPostEdit" onAction="#editPost" text="Edit" />
+                                 </buttons>
+                              </ButtonBar>
+                              <JFXTextField fx:id="postID" layoutX="224.0" layoutY="168.0" text="ID" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tabLecturer" closable="false" text="Lecturer">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ButtonBar layoutX="8.0" layoutY="314.0" prefHeight="40.0" prefWidth="583.0">
+                                 <buttons>
+                                    <JFXButton fx:id="btnLecNew" onAction="#newLec" text="New" />
+                                    <JFXButton fx:id="btnLecEdit" onAction="#editLec" text="Edit" />
+                                 </buttons>
+                              </ButtonBar>
+                              <JFXTextField fx:id="txtlecId" layoutX="224.0" layoutY="168.0" promptText="ID" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tabInstructer" closable="false" text="Instructer">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ButtonBar layoutX="8.0" layoutY="314.0" prefHeight="40.0" prefWidth="583.0">
+                                 <buttons>
+                                    <JFXButton fx:id="btnInsNew" onAction="#newIns" text="New" />
+                                    <JFXButton fx:id="btnInsEdit" onAction="#editIns" text="Edit" />
+                                 </buttons>
+                              </ButtonBar>
+                              <JFXTextField fx:id="txtlecId" layoutX="224.0" layoutY="168.0" promptText="ID" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tabSubject" closable="false" text="Subject">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        <children>
+                        	<fx:include source="Subject.fxml" />
+                        </children>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

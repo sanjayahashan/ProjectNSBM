@@ -1,0 +1,169 @@
+* {
+	-fx-primary :  #005377;
+	-fx-secondary : #FFFF8D;
+	-fx-primarytext : #E4DAAA;
+	
+	-fx-table-primary: #018dff;
+	-fx-table-secondary: #fbfbff;
+	-fx-table-text: black;
+}
+
+.root {
+	-fx-background-color : -fx-primary;
+}
+
+.glyph-icon {
+	fx-fill: -fx-primarytext;
+}
+
+.label {
+	-fx-text-fill: -fx-primarytext;
+}
+
+.jfx-combo-box .cell {
+	-fx-text-fill: -fx-primarytext;
+	-fx-background-color: -fx-primary;
+	-fx-focus-color: -fx-secondary;
+}
+
+.jfx-combo-box {
+	-fx-prompt-text-fill: -fx-primarytext;
+}
+
+.jfx-combo-box .combo-box-button-container {
+	-fx-background-color: -fxf-primary;
+}
+
+.check-box {
+	-fx-text-fill: -fx-primarytext;
+}
+
+.jfx-button {
+	-fx-text-fill: -fx-primarytext;
+	-fx-border-color: -fx-secondary;
+	-fx-border-radius: 20px;
+	-fx-background-radius: 20px;
+	-fx-pref-width: 90px;
+	-fx-pref-height: 35px;
+}
+
+.jfx-button:hover {
+	-fx-border-color: -fx-secondary;
+	-fx-background-color: -fx-secondary;
+	-fx-text-fill: -fx-primary;
+}
+
+.text-field
+{
+	-fx-text-fill: -fx-primarytext;
+	-fx-font-size: 9pt;
+	-jfx-focus-color: -fx-secondary;
+	-fx-prompt-text-fill: -fx-primarytext;
+}
+
+.login-text {
+	-fx-font-size: 13pt;
+}
+
+.radio-button {
+	-fx-text-fill: -fx-primarytext;
+	-fx-font-size: 8pt;
+	-jfx-focus-color: -fx-secondary;
+}
+
+.radio-button:selected {
+	-fx-color: -fx-primary;
+}
+
+.ikonli-font-icon {
+	-fx-icon-color: -fx-primarytext;
+}
+
+.jfx-tab-pane {
+	-fx-background-color: -fx-primary;
+}
+
+.pane {
+	-fx-background-color: -fx-primary;
+}
+
+.tab {
+    -fx-background-color: -fx-primary;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 50px;
+}
+
+.tab-header-background {
+	-fx-background-color: -fx-primary;
+}
+
+.titled-pane > .title {
+	-fx-background-color: -fx-secondary;
+	-fx-border-color: -fx-secondary;
+}
+
+.jfx-date-picker .jfx-button {
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: TRANSPARENT;
+}
+
+.jfx-date-picker .jfx-button:hover { 
+	-fx-border-color: TRANSPARENT;
+	-fx-background-color: TRANSPARENT;
+	-fx-text-fill: -fx-primary;
+}
+
+.jfx-date-picker .label {
+	-fx-text-fill: black;
+}
+
+.jfx-time-picker .label {
+	-fx-text-fill: black;
+}
+
+.jfx-time-picker:focused {
+	-fx-text-fill: white;
+}
+
+.table-view .filler{
+   -fx-background-color: #757575;
+}
+
+.table-view .column-header-background .label {
+    -fx-background-color: #757575;
+    -fx-text-fill: -fx-table-text;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: -fx-table-text;
+}
+
+.table-view .column-header {
+    -fx-background-color: #757575;
+}
+
+.table-row-cell:selected {
+	-fx-background-color: -fx-table-primary;
+	-fx-text-fill: -fx-table-text;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-secondary;
+}
+
+.context-menu .menu-item{
+  -fx-background-color: -fx-table-secondary;
+  -fx-text-fill: black;
+}
+
+.context-menu .menu-item .label {
+  -fx-text-fill: black;
+}
+
+.context-menu .menu-item:focused .label {
+  -fx-text-fill: black;
+}
+
+.context-menu .menu-item:focused {
+	-fx-text-fill: black;
+} 

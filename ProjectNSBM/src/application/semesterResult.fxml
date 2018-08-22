@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="361.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UndResultController">
+   <children>
+      <TitledPane fx:id="tPaneSem1" collapsible="false" layoutX="9.0" layoutY="14.0" prefHeight="159.0" prefWidth="545.0" text="Semester 1">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <JFXComboBox fx:id="cmbYr1Sem1Sub1" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="291.0" promptText="Subject1" stylesheets="@dark_theme.css" />
+                  <JFXTextField fx:id="txtYr1Sem1Sub1" layoutX="321.0" layoutY="14.0" prefHeight="26.0" prefWidth="42.0" promptText="Result" />
+                  <JFXCheckBox fx:id="chkYr1Sem1Sub1" layoutX="457.0" layoutY="19.0" text="Payment" />
+                  <JFXComboBox fx:id="cmbYr1Sem1Sub2" layoutX="14.0" layoutY="52.0" prefHeight="26.0" prefWidth="289.0" promptText="Subject2" />
+                  <JFXTextField fx:id="txtYr1Sem1Sub2" layoutX="321.0" layoutY="52.0" prefHeight="26.0" prefWidth="42.0" promptText="Result" />
+                  <JFXCheckBox fx:id="chkYr1Sem1Sub2" layoutX="457.0" layoutY="57.0" text="Payment" />
+                  <JFXComboBox fx:id="cmbYr1Sem1Sub3" layoutX="14.0" layoutY="91.0" prefHeight="26.0" prefWidth="289.0" promptText="Subject3" />
+                  <JFXTextField fx:id="txtYr1Sem1Sub3" layoutX="321.0" layoutY="91.0" prefHeight="26.0" prefWidth="42.0" promptText="Result" />
+                  <JFXCheckBox fx:id="chkYr1Sem1Sub3" layoutX="457.0" layoutY="96.0" text="Payment" />
+                  <Label layoutX="398.0" layoutY="20.0" text="Fee" />
+                  <Label layoutX="398.0" layoutY="60.0" text="Fee" />
+                  <Label layoutX="398.0" layoutY="96.0" text="Fee" />
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <TitledPane fx:id="tPaneSem2" collapsible="false" layoutX="9.0" layoutY="187.0" prefHeight="159.0" prefWidth="545.0" text="Semester 2">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <JFXComboBox fx:id="cmbYr1Sem2Sub1" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="291.0" promptText="Subject1" />
+                  <JFXTextField fx:id="txtYr1Sem2Sub1" layoutX="321.0" layoutY="14.0" prefHeight="26.0" prefWidth="42.0" promptText="Result" />
+                  <JFXCheckBox fx:id="chkYr1Sem2Sub1" layoutX="457.0" layoutY="19.0" text="Payment" />
+                  <JFXComboBox fx:id="cmbYr1Sem2Sub2" layoutX="14.0" layoutY="52.0" prefHeight="26.0" prefWidth="289.0" promptText="Subject2" />
+                  <JFXTextField fx:id="txtYr1Sem2Sub2" layoutX="321.0" layoutY="52.0" prefHeight="26.0" prefWidth="42.0" promptText="Result" />
+                  <JFXCheckBox fx:id="chkYr1Sem2Sub2" layoutX="457.0" layoutY="57.0" text="Payment" />
+                  <JFXComboBox fx:id="cmbYr1Sem2Sub3" layoutX="14.0" layoutY="91.0" prefHeight="26.0" prefWidth="289.0" promptText="Subject3" />
+                  <JFXTextField fx:id="txtYr1Sem2Sub3" layoutX="321.0" layoutY="91.0" prefHeight="26.0" prefWidth="42.0" promptText="Result" />
+                  <JFXCheckBox fx:id="chkYr1Sem2Sub3" layoutX="457.0" layoutY="96.0" text="Payment" />
+                  <Label layoutX="398.0" layoutY="20.0" text="Fee" />
+                  <Label layoutX="398.0" layoutY="60.0" text="Fee" />
+                  <Label layoutX="398.0" layoutY="96.0" text="Fee" />
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

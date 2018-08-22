@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="558.0" prefWidth="680.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SubjectController">
+   <children>
+      <TableView fx:id="tableSubject" layoutX="105.0" layoutY="62.0" prefHeight="340.0" prefWidth="680.0" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="colId" minWidth="20.0" prefWidth="97.14285714285714" text="id" />
+            <TableColumn fx:id="colName" prefWidth="97.14285714285714" text="name" />
+            <TableColumn fx:id="colCredits" prefWidth="97.14285714285714" text="credits" />
+            <TableColumn fx:id="colFee" prefWidth="97.14285714285714" text="fee" />
+            <TableColumn fx:id="colLecId" prefWidth="97.14285714285714" text="lecturer ID" />
+            <TableColumn fx:id="colStartTime" prefWidth="97.14285714285714" text="Start Time" />
+            <TableColumn fx:id="colEndTime" prefWidth="97.14285714285714" text="End Time" />
+         </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="contDel" mnemonicParsing="false" onAction="#delete" text="Delete" />
+                  <MenuItem fx:id="contEdit" mnemonicParsing="false" onAction="#edit" text="Edit" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <JFXButton fx:id="btnNew" layoutX="244.0" layoutY="508.0" onAction="#insert" text="New" />
+      <JFXButton fx:id="btnRefresh" layoutX="346.0" layoutY="508.0" onAction="#initCols" text="Refresh" />
+   </children>
+</AnchorPane>

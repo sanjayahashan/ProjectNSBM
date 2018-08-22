@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UndFormController">
+   <children>
+      <AnchorPane fx:id="rootAnchor" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" stylesheets="@application.css">
+         <children>
+            <JFXTextField fx:id="txtID" editable="false" labelFloat="true" layoutX="260.0" layoutY="14.0" prefHeight="20.0" prefWidth="400.0" promptText="ID">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="txtFname" alignment="CENTER" labelFloat="true" layoutX="31.0" layoutY="134.0" prefHeight="22.0" prefWidth="300.0" promptText="First Name">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="txtMname" alignment="CENTER" labelFloat="true" layoutX="31.0" layoutY="174.0" prefHeight="22.0" prefWidth="300.0" promptText="Middle Name">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="txtLname" alignment="CENTER" labelFloat="true" layoutX="31.0" layoutY="212.0" prefHeight="22.0" prefWidth="300.0" promptText="Last Name">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="txtHome_no" alignment="CENTER" labelFloat="true" layoutX="31.0" layoutY="345.0" prefHeight="22.0" prefWidth="300.0" promptText="No.">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAdd_1" alignment="CENTER" labelFloat="true" layoutX="31.0" layoutY="388.0" prefHeight="22.0" prefWidth="300.0" promptText="Address 1">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAdd_2" alignment="CENTER" labelFloat="true" layoutX="31.0" layoutY="431.0" prefHeight="22.0" prefWidth="300.0" promptText="Address 2">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAdd_3" alignment="CENTER" labelFloat="true" layoutX="31.0" layoutY="476.0" prefHeight="22.0" prefWidth="300.0" promptText="Address 3">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="txtT_no" alignment="CENTER" labelFloat="true" layoutX="400.0" layoutY="221.0" prefHeight="22.0" prefWidth="300.0" promptText="Telephone">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="txtEmail" alignment="CENTER" labelFloat="true" layoutX="400.0" layoutY="265.0" prefHeight="22.0" prefWidth="300.0" promptText="email">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <Group layoutX="99.0" layoutY="300.0">
+               <children>
+                  <JFXRadioButton id="M" fx:id="radioMale" layoutX="12.0" layoutY="12.0" selected="true" text="Male">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="gender" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton id="F" fx:id="radioFemale" layoutX="98.0" layoutY="12.0" text="Female" toggleGroup="$gender" />
+               </children>
+            </Group>
+            <TitledPane animated="false" collapsible="false" layoutX="400.0" layoutY="321.0" prefHeight="172.0" prefWidth="370.0" stylesheets="@application.css" text="A/L Results">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="181.0" prefWidth="362.0" style="-fx-background-color: #005377;">
+                     <children>
+                        <JFXTextField fx:id="txtIsland_rank" alignment="CENTER" labelFloat="true" layoutX="14.0" layoutY="34.0" promptText="Island Rank" />
+                        <JFXTextField fx:id="txtDistrict_rank" alignment="CENTER" labelFloat="true" layoutX="14.0" layoutY="75.0" promptText="District Rank" />
+                        <JFXTextField fx:id="txtSub1" alignment="CENTER" labelFloat="true" layoutX="219.0" layoutY="18.0" promptText="Subject 1" />
+                        <JFXTextField fx:id="txtSub2" alignment="CENTER" labelFloat="true" layoutX="219.0" layoutY="59.0" promptText="Subject 2" />
+                        <JFXTextField fx:id="txtSub3" alignment="CENTER" labelFloat="true" layoutX="219.0" layoutY="102.0" promptText="Subject 3" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <JFXTextField fx:id="txtRyear" alignment="CENTER" labelFloat="true" layoutX="400.0" layoutY="143.0" prefHeight="22.0" prefWidth="300.0" promptText="Registration Year">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="txtRsem" alignment="CENTER" labelFloat="true" layoutX="400.0" layoutY="183.0" prefHeight="22.0" prefWidth="300.0" promptText="Registration Semester">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmbFac" layoutX="259.0" layoutY="61.0" prefHeight="26.0" prefWidth="400.0" promptText="Faculty" />
+            <JFXComboBox fx:id="cmbCourse" layoutX="259.0" layoutY="107.0" prefHeight="26.0" prefWidth="400.0" promptText="Course" />
+            <JFXDatePicker fx:id="dateD" layoutX="34.0" layoutY="265.0" prefHeight="28.0" prefWidth="294.0" promptText="Date of Birth" />
+            <FontIcon iconLiteral="mdi-account-box" iconSize="100" layoutX="60.0" layoutY="102.0" />
+            <ButtonBar layoutX="233.0" layoutY="535.0" prefHeight="50.0" prefWidth="334.0">
+               <buttons>
+                  <JFXButton fx:id="btnSave" onAction="#insert" text="Save" textAlignment="CENTER" />
+                  <JFXButton fx:id="btnRes" onAction="#subDetails" text="Results" textAlignment="CENTER" />
+                  <JFXButton fx:id="btnDelete" onAction="#deleteUnd" text="Delete" textAlignment="CENTER" />
+               </buttons>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </ButtonBar>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

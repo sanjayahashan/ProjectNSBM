@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="408.0" prefWidth="680.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LecTableController">
+   <children>
+      <TableView fx:id="tableSubject" layoutX="105.0" layoutY="62.0" prefHeight="408.0" prefWidth="680.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="colId" minWidth="20.0" prefWidth="170.0" text="id" />
+            <TableColumn fx:id="colName" prefWidth="170.0" text="name" />
+            <TableColumn fx:id="colCredits" prefWidth="170.0" text="Total Credits" />
+            <TableColumn fx:id="colFac" prefWidth="170.0" text="Faculty" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

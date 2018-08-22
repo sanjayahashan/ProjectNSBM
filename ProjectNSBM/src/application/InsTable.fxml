@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="408.0" prefWidth="680.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InsTableController">
+   <children>
+      <TableView fx:id="tableSubject" layoutX="105.0" layoutY="62.0" prefHeight="408.0" prefWidth="680.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="colId" minWidth="20.0" prefWidth="97.14285714285714" text="id" />
+            <TableColumn fx:id="colFName" prefWidth="97.14285714285714" text="First Name" />
+            <TableColumn fx:id="colLName" prefWidth="97.14285714285714" text="Last Name" />
+            <TableColumn fx:id="colGender" prefWidth="97.14285714285714" text="Gender" />
+            <TableColumn fx:id="colCity" prefWidth="97.14285714285714" text="City" />
+            <TableColumn fx:id="colTel" prefWidth="97.14285714285714" text="Telephone" />
+            <TableColumn fx:id="colEmail" prefWidth="97.14285714285714" text="email" />
+         </columns>
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#initCols" text="Refresh" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+   </children>
+</AnchorPane>

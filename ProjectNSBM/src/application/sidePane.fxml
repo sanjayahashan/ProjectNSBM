@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="450.0" prefWidth="220.0" style="-fx-background-color: #052F5F;" stylesheets="@dark_theme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXButton id="nsbmButton" fx:id="btnHome" alignment="CENTER" contentDisplay="TOP" onAction="#handleButtonAction" prefHeight="152.0" prefWidth="220.0" text="NSBM &#10;Student Management &#10;System" textAlignment="CENTER">
+         <graphic>
+            <FontIcon iconLiteral="mdi-webcam" iconSize="50" />
+         </graphic>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUndergrad" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutY="152.0" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="220.0" styleClass="main" text="Undergraduate">
+         <graphic>
+            <FontIcon iconLiteral="dashicons-welcome-learn-more" iconSize="40" />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnPostGrad" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutY="210.0" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="220.0" styleClass="main" text="Postgraduate">
+         <graphic>
+            <FontIcon iconLiteral="mdi-account" iconSize="40" />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnLecturer" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutY="268.0" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="220.0" styleClass="main" text="Lecturer">
+         <graphic>
+            <FontIcon iconLiteral="mdi-account-circle" iconSize="40" />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnInstructor" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutY="326.0" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="220.0" styleClass="main" text="Instructor">
+         <graphic>
+            <FontIcon iconLiteral="mdi-account-multiple" iconSize="40" />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSubject" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutY="384.0" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="220.0" styleClass="main" text="Subject">
+         <graphic>
+            <FontIcon iconLiteral="mdi-clipboard-check" iconSize="40" />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnLab" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutY="442.0" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="220.0" text="Lab Sessions">
+         <graphic>
+            <FontIcon iconLiteral="mdi-calendar-multiple" iconSize="40" />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
